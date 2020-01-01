@@ -1,0 +1,22 @@
+{
+  "name": "nodeservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesODonoghue/NodeServices.git"
+  },
+  "author": "James O'Donoghue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesODonoghue/NodeServices/issues"
+  },
+  "homepage": "https://github.com/JamesODonoghue/NodeServices#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
