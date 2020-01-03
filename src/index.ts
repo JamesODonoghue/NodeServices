@@ -3,7 +3,6 @@ import express from "express";
 import { getSiteData } from "./scraper";
 
 const app = express();
-const port = 8080; // default port to listen
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -15,6 +14,8 @@ app.use((req, res, next) => {
 app.get("/rep-data", async (req, res) => {
     res.json(await getSiteData());
 });
+
+let port = process.env.PORT || 8080;
 // start the Express server
 app.listen(port, () => {
     // tslint:disable-next-line:no-console
