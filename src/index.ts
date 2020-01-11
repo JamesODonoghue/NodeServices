@@ -15,7 +15,7 @@ app.get("/rep-data", async (req, res) => {
     res.json(await getSiteData());
 });
 
-let port = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 // start the Express server
 app.listen(port, () => {
     // tslint:disable-next-line:no-console
